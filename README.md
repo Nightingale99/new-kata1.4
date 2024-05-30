@@ -8,4 +8,4 @@ https://nightingale99.github.io/new-kata1.4/
 6. Добавлены ссылки по телефону и почте.
 
 P.S. Работа сделана с нуля, а не переписана из старого репо.
-https://nightingale99.github.io/14yablonskiy/ Старая работа.
+https://github.com/Nightingale99/14yablonskiy Старая работа.
