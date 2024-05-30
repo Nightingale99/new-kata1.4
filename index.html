@@ -3,45 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="./index.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kata 1.4 yablonsky</title>
 </head>
 <body>
   <aside class="service-aside">
-    <header class="service-aside__header">
-      <img id="close" src="./resources/cross.svg" alt="Close">
-      <img src="./resources/CPS.svg" alt="CPS">
-      <img id="search" src="./resources/search.svg" alt="Search">
-    </header>
-    <main class="service-aside__main">
-        <ul class="service-aside__menu">
-          <li class="service-aside__menu-element--active">Ремонт техники</li>
-          <li>Услуги и сервисы</li>
-          <li>Корпоративным клиентам</li>
-          <li>Продавцам техники</li>
-          <li>Партнерам</li>
-          <li>Производителям</li>
-          <li>Наши сервисные центры</li>
-          <li>Контакты</li>
-        </ul>
-    </main>
+    <div class="flex-wrapper">
+      <header class="service-aside__header">
+        <button class="service-aside__button"><img id="close" src="./resources/cross.svg" alt="Close"></button>
+        <a class="service-aside__link" href="#"><img src="./resources/CPS.svg" alt="CPS"></a>
+        <button class="service-aside__button"><img id="search" src="./resources/search.svg" alt="Search"></button>
+      </header>
+      <nav class="service-aside__nav">
+          <ul class="service-aside__menu">
+            <li class="service-aside__menu-element service-aside__menu-element--active">Ремонт техники</li>
+            <li class="service-aside__menu-element"><a class="service-aside__link" href="#">Услуги и сервисы</a></li>
+            <li class="service-aside__menu-element"><a class="service-aside__link" href="#">Корпоративным клиентам</a></li>
+            <li class="service-aside__menu-element"><a class="service-aside__link" href="#">Продавцам техники</a></li>
+            <li class="service-aside__menu-element"><a class="service-aside__link" href="#">Партнерам</a></li>
+            <li class="service-aside__menu-element"><a class="service-aside__link" href="#">Производителям</a></li>
+            <li class="service-aside__menu-element"><a class="service-aside__link" href="#">Наши сервисные центры</a></li>
+            <li class="service-aside__menu-element"><a class="service-aside__link" href="#">Контакты</a></li>
+          </ul>
+      </nav>
+    </div>
     <footer class="service-aside__footer">
       <div class="service-aside__contact-ways">
-        <img src="./resources/call.svg" alt="Call">
-        <img src="./resources/chat.svg" alt="Chat">
-        <img src="./resources/profile.svg" alt="Profile">
+        <button class="service-aside__button"><img src="./resources/call.svg" alt="Call"></button>
+        <button class="service-aside__button"><img src="./resources/chat.svg" alt="Chat"></button>
+        <button class="service-aside__button"><img src="./resources/profile.svg" alt="Profile"></button>
       </div>
-      <span class="service-aside__email">
-        mail@cps.com
-      </span>
-      <span class="service-aside__phone">
-        8 800 890 8900
-      </span>
+      <a href="mailto:mail@cps.com" class="service-aside__email">mail@cps.com</a>
+      <a href="tel:+78008908900" class="service-aside__phone">8 800 890 8900</a>
       <div class="service-aside__lang">
-        <span id="ru">Ru</span>
-        <span id="en">En</span>
-        <span id="ch">Ch</span>
+        <button class="service-aside__button service-aside__button--active"><span id="ru">Ru</span></button>
+        <button class="service-aside__button"><span id="en">En</span></button>
+        <button class="service-aside__button"><span id="ch">Ch</span></button>
       </div>
     </footer>
   </aside>
