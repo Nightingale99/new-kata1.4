@@ -12,33 +12,13 @@ html,body{
   height: 100%;
 }
 
-button{
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-
-
-a{
-  text-decoration: none;
-  color: #1B1C21;
-  margin: 0;
-}
-
-ul,li{
-  list-style: none;
-  padding: 0;
-}
-
-.service-aside__button:not(.service-aside__button--active), .service-aside__menu-element, .service-aside__link{
+.service-aside__button:not(.service-aside__button--active), .service-aside__menu-element, .service-aside__link, .service__button:not(.service__button--active){
   transition: 0.3s;
   cursor: pointer;
   text-decoration: none;
 }
 
-.service-aside__button:not(.service-aside__button--active):hover, .service-aside__menu-element:not(.service-aside__menu-element--active):hover, .service-aside__link:hover{
+.service-aside__button:not(.service-aside__button--active):hover, .service-aside__menu-element:not(.service-aside__menu-element--active):hover, .service-aside__link:hover, .service__button:not(.service__button--active):hover{
   transform: scale(1.1);
   color:#41F6D7;
   transition: 0.3s;
@@ -47,7 +27,6 @@ ul,li{
 .service-aside{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   color: #1B1C21;
   position: sticky;
   font-family: "TTLakesMedium", sans-serif;
@@ -67,18 +46,18 @@ ul,li{
   margin-bottom: 46px;
 }
 
-
-#search{
-  margin-left: 78px;
+.service-aside__header > .service-aside__button:first-child{
+  margin-right: 16px;
 }
 
-#close{
-  margin-right: 16px;
+.service-aside__header > .service-aside__button:last-child{
+  margin-left: 78px;
 }
 
 .service-aside__menu-element {
   margin-bottom: 32px;
 }
+
 
 .service-aside__menu :last-child {
   margin-bottom: 0;
@@ -104,11 +83,12 @@ ul,li{
   border-bottom-right-radius: 5px;
 }
 
-.service-aside__contact-ways > .service-aside__button{
+.service-aside__button-catalogue{
   margin-right: 16px;
 }
 
 .service-aside__contact-ways{
+  display: flex;
   margin-bottom: 16px;
 }
 
@@ -123,19 +103,29 @@ ul,li{
   margin-bottom: 12px;
 }
 
-.service-aside__lang{
+.lang{
+  display: flex;
   margin-top: 14.7%;
 }
 
-.service-aside__lang > .service-aside__button{
+.lang  .service__button{
+  font-size: 16px;
   text-transform: uppercase;
+}
+
+.lang  .lang__button-catalogue {
   margin-left: 7px;
 }
 
-.service-aside__lang > .service-aside__button:first-child{
+.lang  .lang__button-catalogue:first-child{
   margin-left: 0;
 }
 
-.service-aside__button--active{
+.service__button--active{
   color: #7E7E82;
+}
+
+.service-aside__footer{
+  margin-top: auto;
+  font-size: 16px;
 }
